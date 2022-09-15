@@ -21,7 +21,7 @@ const Card: React.FC<Props> = ({ post }: Props) => {
       <div className="flex-1 ml-5">
         <h2 className="text-2xl mt-5 font-bold">
           <Link href={`/posts/${post.slug}`}>
-            <a>{post.title}</a>
+            {post.title}
           </Link>
         </h2>
         <p className="mt-3">{post.description}</p>
