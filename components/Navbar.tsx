@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 const NavBar = () => {
@@ -8,9 +9,9 @@ const NavBar = () => {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <a href="javascript:void(0)">
+            <Link href="/">
               <h2 className="text-2xl font-bold">Javier Coronas</h2>
-            </a>
+            </Link>
             <div className="md:hidden">
               <button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -57,16 +58,16 @@ const NavBar = () => {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-gray-600 hover:text-blue-600">
-                <a href="/">Home</a>
+                <Link href="/">Home</Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
-                <a href="/blog">Blog</a>
+                <Link href="/blog">Blog</Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
-                <a href="javascript:void(0)">Sobre mi</a>
+                <Link href="javascript:void(0)">Sobre mi</Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
-                <a href="javascript:void(0)">Contacto</a>
+                <Link href="javascript:void(0)">Contacto</Link>
               </li>
             </ul>
           </div>
